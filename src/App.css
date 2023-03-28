@@ -1,0 +1,163 @@
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf') 
+       format('truetype');
+}
+
+:root { 
+--clr-default: hsl(0,0%,100%);
+--fs-basic:1.125rem;
+--fs-m:1.5rem;
+--fs-l:1.75rem;
+--fs-xl:5rem;
+
+--fw-bold:700;
+--fw-normal:400;
+
+
+}
+
+.result {
+  background:  linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+  color:var(--clr-default);
+  padding: 2.5rem calc(2.5rem * 1.3);
+  border-radius: 2.5rem;
+  text-align: center;
+}
+
+
+@media (min-width: 600px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+}
+
+
+body { 
+  font-family: 'HankenGrotesk', sans-serif;;
+  font-size: var(--fs-basic);
+  color: hsl(224, 30%, 27%)
+}
+
+
+.details-item-list { 
+display: grid;
+}
+.grid-container {
+  gap: 1rem;
+  display: grid;
+  align-content: start;
+
+}
+
+.message{
+  font-weight: var(--fw-normal);
+  color:hsl(var(--clr-default), .6);
+}
+
+.result-title { 
+color:var(--clr-default);
+font-size: var(--fs-l);
+font-weight:var(--fw-bold)
+}
+
+
+
+
+
+
+
+.summary-container {
+  display: grid;
+  min-height: 30rem;
+  max-width: 46rem;
+  border-radius: 2.5rem;
+  box-shadow: .1rem 1rem 4rem 
+  hsl(224,30%,25%, .2);
+
+}
+
+.sub-title {
+  font-weight: var(--fw-bold);
+  text-align: center;
+  font-size: var(--fs-m);
+}
+
+
+.summary { 
+min-width: 20rem;
+display: grid;
+margin-left: 0.3rem;
+padding: 1rem calc(.5rem * 1.5);
+
+}
+
+.summary-title { 
+font-weight: var(--fw-bold);
+font-size:var(--fs-m);
+padding-top: .7rem ;
+padding-left: .9rem;
+}
+
+.circle { 
+background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+border-radius: 100%;
+aspect-ratio: 1 / 1;
+width: 12rem;
+display: grid;
+place-content: center;
+margin-inline: auto;
+
+}
+
+.circle p { 
+  font-weight: var(--fw-normal);
+  color:hsl(var(--clr-default), .6);
+}
+
+.circle span { 
+  font-size: var(--fs-xl);
+  font-weight:var(--fw-bold);
+  max-height: 6rem;
+
+}
+
+.button:hover { 
+  background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+
+.button {
+  background: #303B59;
+border-radius: 15rem;
+height: 56px;
+color: white;
+}
+
+
+@media(max-width: 600px) {
+  .result {
+    border-radius: 0 0 2.5rem 2.5rem
+  }
+}
+
+@media(min-width: 600px) {
+  .summary-container {
+    margin-inline: 1rem;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    box-shadow: .1rem 1rem 4rem 
+    hsl(224,30%,25%, .2);
+
+  }
+ 
+}

@@ -1,0 +1,75 @@
+.item-list {
+  display: flex;
+  margin: 0.6rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-weight: var(--fw-bold);
+  justify-content: space-between;
+}
+
+
+.flex-items { 
+display: flex;
+gap: .5rem;
+}
+
+.fade-in{
+    display: inherit;
+    -webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+  }
+  @-webkit-keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+
+.svg-Reaction {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    color:#FF5555  
+    
+}
+
+
+.svg-Memory {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.95)
+    ),
+    #ffb21e;
+  color: #ffb21e;
+}
+
+
+.svg-Verbal {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  color: #00BB8F;
+}
+
+
+
+.svg-Visual {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+    color: #1125D6;
+  }
+
+  .item-list span{
+    color: #303B59;
+opacity: 0.5;
+    font-weight: 800;
+  }
