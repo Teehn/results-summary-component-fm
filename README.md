@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Teehn/results-summary-component-fm)
+- Live Site URL: [Add live site URL here](https://graceful-choux-f98c05.netlify.app/)
 
 ## My process
 
